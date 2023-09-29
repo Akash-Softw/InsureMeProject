@@ -1,4 +1,4 @@
-utpipeline {
+pipeline {
  agent any
 tools {
   maven 'My_Maven_Jenkins'
