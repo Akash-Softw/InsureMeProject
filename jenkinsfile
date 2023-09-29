@@ -1,10 +1,10 @@
-pipeline {
+utpipeline {
  agent any
 tools {
   maven 'My_Maven_Jenkins'
       }
 stages{
-  stage('Git Pull') {
+  stage('Git Checkout') {
        steps {
           git 'https://github.com/Akash-Softw/InsureMeProject.git'
     
