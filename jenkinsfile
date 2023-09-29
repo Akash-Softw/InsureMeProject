@@ -4,9 +4,15 @@ tools {
   maven 'My_Maven_Jenkins'
       }
 stages{
-  stage('Git Checkout') {
+  stage('Git Pull') {
        steps {
           git 'https://github.com/Akash-Softw/InsureMeProject.git'
+    
+            }
+}
+ stage('Build Package') {
+       steps {
+         sh 'mvn package'
     
             }
         }
