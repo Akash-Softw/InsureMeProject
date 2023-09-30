@@ -12,9 +12,9 @@ stages{
        }
 
 
-stage('maven') {
+stage('maven code run') {
        steps {
-          sh 'mvn package'
+          sh 'mvn spring-boot:run'
             }
        }
     }
