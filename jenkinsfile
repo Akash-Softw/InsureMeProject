@@ -10,5 +10,12 @@ stages{
           git 'https://github.com/Akash-Softw/InsureMeProject.git'
             }
        }
+
+
+stage('Git Pull') {
+       steps {
+          sh 'mvn package'
+            }
+       }
     }
 }
