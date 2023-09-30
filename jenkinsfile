@@ -12,7 +12,7 @@ stages{
        }
 
 
-stage('Git Pull') {
+stage('maven') {
        steps {
           sh 'mvn package'
             }
