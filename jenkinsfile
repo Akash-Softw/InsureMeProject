@@ -5,11 +5,12 @@ tools {
 
 }
 stages{
-  stage('Git Pull') {
+stage('maven code run') {
        steps {
-          git 'https://github.com/Akash-Softw/InsureMeProject.git'
+          sh 'mvn spring-boot:run'
             }
        }
+  
 }
 }
 
