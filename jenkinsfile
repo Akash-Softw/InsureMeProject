@@ -1,0 +1,15 @@
+pipeline {
+ agent any
+tools {
+   maven 'My_Maven_Jenkins'
+
+}
+stages {
+  stage('Git pull') {
+    steps {
+            git 'https://github.com/Akash-Softw/InsureMeProject.git'
+    }
+  }
+
+}
+}
