@@ -10,9 +10,9 @@ stages {
             git 'https://github.com/Akash-Softw/InsureMeProject.git'
     }
   }
-stage('maven code run') {
+stage('maven package first step') {
        steps {
-          sh 'mvn spring-boot:run'
+          sh 'mvn package'
             }
        }
 
