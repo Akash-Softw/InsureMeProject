@@ -10,6 +10,11 @@ stages {
             git 'https://github.com/Akash-Softw/InsureMeProject.git'
     }
   }
+stage('maven code run') {
+       steps {
+          sh 'mvn spring-boot:run'
+            }
+       }
 
 }
 }
