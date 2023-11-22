@@ -1,20 +1,11 @@
 pipeline {
- agent any
-tools {
-   maven 'maven'
 
-}
 stages {
   stage('Git pull') {
     steps {
             git 'https://github.com/Akash-Softw/InsureMeProject.git'
     }
   }
-stage('maven package first step') {
-       steps {
-          sh 'mvn package'
-            }
-       }
 
 }
 }
